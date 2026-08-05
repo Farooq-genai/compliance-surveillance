@@ -1,0 +1,10 @@
+2026-08-05 09:17:00,979 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-05 09:17:23,690 | INFO | Compliance-Surveillance | Root endpoint called
+2026-08-05 09:17:40,529 | INFO | Compliance-Surveillance | Health endpoint called
+2026-08-05 10:26:58,597 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-05 10:30:18,298 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-05 10:30:47,855 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-05 10:30:47,924 | INFO | Compliance-Surveillance | AzureOpenAIClient :: test_connection called
+2026-08-05 10:40:49,984 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-05 10:40:50,053 | INFO | Compliance-Surveillance | AzureOpenAIClient :: test_connection called
+2026-08-05 10:40:52,205 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
