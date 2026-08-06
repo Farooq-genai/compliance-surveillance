@@ -31,3 +31,27 @@ class AzureOpenAIClient:
         )
 
         return response.choices[0].message.content
+
+    def chat(self, prompt: str) -> str:
+        """
+        Send a prompt to Azure OpenAI and return the response text.
+        """
+
+        logger.info("Sending prompt to Azure OpenAI")
+
+        response = self.client.chat.completions.create(
+            model=settings.azure_openai_deployment_name,
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are an Enterprise Compliance Surveillance AI."
+                },
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ],
+            temperature=0
+        )
+
+        return response.choices[0].message.content

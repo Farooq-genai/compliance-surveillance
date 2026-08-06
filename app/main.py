@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from app.core.config import settings
 from app.core.logger import logger
+from app.api.v1.upload import router as upload_router
+
 
 app = FastAPI(
     title=settings.app_name,
@@ -30,3 +32,4 @@ def health():
     }
 
 
+app.include_router(upload_router)
