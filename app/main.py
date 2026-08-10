@@ -2,6 +2,9 @@ from fastapi import FastAPI
 from app.core.config import settings
 from app.core.logger import logger
 from app.api.v1.upload import router as upload_router
+from app.api.v1.compliance import router as compliance_router
+from fastapi.responses import HTMLResponse
+from pathlib import Path
 
 
 app = FastAPI(
@@ -31,5 +34,17 @@ def health():
         "status": "healthy"
     }
 
+@app.get("/dashboard", response_class=HTMLResponse)
+
+def dashboard():
+
+    file = Path(
+        "app/templates/compliance_dashboard.html"
+    )
+
+    return file.read_text(
+        encoding="utf-8"
+    )
 
 app.include_router(upload_router)
+app.include_router(compliance_router, prefix="/api/v1")

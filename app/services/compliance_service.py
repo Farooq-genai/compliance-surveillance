@@ -5,6 +5,9 @@ from app.utils.email_parser import EmailParser
 from app.agents.compliance_agent import ComplianceAgent
 from app.core.logger import logger
 from app.services.risk_score_calculator import RiskScoreCalculator
+from app.repositories.email_repository import EmailRepository
+from app.repositories.compliance_repository import ComplianceRepository
+from app.database.dependencies import SessionLocal
 
 
 class ComplianceService:
@@ -20,6 +23,9 @@ class ComplianceService:
         self.email_parser = EmailParser()
         self.compliance_agent = ComplianceAgent()
         self.risk_score_calculator = RiskScoreCalculator()
+        self.email_repository = EmailRepository()
+        self.compliance_repository = ComplianceRepository()
+
 
     def process_excel(self, excel_path: Path) -> list:
         """
@@ -35,12 +41,15 @@ class ComplianceService:
         excel_rows = self.excel_reader.read(excel_path)
         # print("excel_rows", excel_rows)
         results = []
+        db = SessionLocal()
         try:
 
             for index, row in enumerate(excel_rows, start=1):
                 print(index)
                 print(row)
                 email = self.email_parser.parse(row)
+                saved_email = self.email_repository.create(db, email)
+                logger.info(f"Complienace Service : saved_email _id {saved_email.id}")
                 print("email_data, ----------------->", email)
                 analysis = self.compliance_agent.analyze(email)
                 print("Analysis data ---------------->\n\n\n\n\n", analysis)
@@ -51,6 +60,8 @@ class ComplianceService:
                 final_analysis = {
                     **analysis, **risk_result,
                 }
+                saved_results = self.compliance_repository.create(db, saved_email.id, final_analysis)
+                print(f"Saved Compliance id: {saved_results.id}")
                 results.append(
                     {
                         "email_id": index,
@@ -60,7 +71,11 @@ class ComplianceService:
                         "analysis": final_analysis,
                     }
                 )
+                
 
         except Exception as exc:
             logger.info(f"Process_Excel :: {exc}")
+
+        finally:
+            db.close()
         return results

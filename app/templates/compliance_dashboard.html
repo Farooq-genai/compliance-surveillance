@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Compliance Surveillance Dashboard
+</title>
+
+
+<style>
+
+body {
+    font-family: Arial;
+    margin:30px;
+}
+
+
+table {
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+
+th,td {
+
+    border:1px solid #ccc;
+    padding:10px;
+}
+
+
+th {
+
+    background:#222;
+    color:white;
+
+}
+
+
+.CRITICAL {
+
+    background:#ffcccc;
+
+}
+
+
+.HIGH {
+
+    background:#ffe0b3;
+
+}
+
+
+.MEDIUM {
+
+    background:#fff5cc;
+
+}
+
+
+.LOW {
+
+    background:#ccffcc;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<h1>
+Enterprise Compliance Surveillance
+</h1>
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Sender</th>
+
+<th>Category</th>
+
+<th>Risk Score</th>
+
+<th>Priority</th>
+
+<th>Confidence</th>
+
+<th>Review</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="results">
+
+
+</tbody>
+
+
+</table>
+
+
+
+<script>
+
+
+async function loadResults(){
+
+
+    const response =
+        await fetch(
+            "/api/v1/compliance/results"
+        );
+
+
+    const data =
+        await response.json();
+
+
+    let html="";
+
+
+    data.results.forEach(
+        item => {
+
+
+        html += `
+
+        <tr class="${item.priority}">
+
+
+        <td>${item.id}</td>
+
+
+        <td>${item.sender}</td>
+
+
+        <td>
+            ${item.categories.join(",")}
+        </td>
+
+
+        <td>
+            ${item.risk_score}
+        </td>
+
+
+        <td>
+            ${item.priority}
+        </td>
+
+
+        <td>
+            ${item.confidence}%
+        </td>
+
+
+        <td>
+            ${item.review_status}
+        </td>
+
+
+        </tr>
+
+        `;
+
+
+    });
+
+
+    document.getElementById(
+        "results"
+    ).innerHTML = html;
+
+
+}
+
+
+
+loadResults();
+
+
+</script>
+
+
+</body>
+
+</html>
