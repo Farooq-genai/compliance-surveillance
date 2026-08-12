@@ -13,6 +13,7 @@ class ExcelReader:
         "Email Sample",
         "Category",
         "Classification",
+        "Attachments"
     ]
 
     def read(self, excel_path: Path) -> list[dict]:
@@ -58,6 +59,7 @@ class ExcelReader:
                     "email_text": record.get("Email Sample"),
                     "category": record.get("Category"),
                     "classification": record.get("Classification"),
+                    "attachments": record.get("Attachments")
                 }
             )
 

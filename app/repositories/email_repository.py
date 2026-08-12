@@ -40,6 +40,8 @@ class EmailRepository:
 
             raw_email=email_data["raw_email"],
 
+            attachments=email_data['attachments'],
+
             expected_category=email_data
             .get(
                 "ground_truths",

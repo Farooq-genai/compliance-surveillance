@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from sqlalchemy import DateTime, Integer, String, Text
+from sqlalchemy import DateTime, Integer, String, Text, JSON
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.database.base import Base
@@ -72,10 +72,9 @@ class Email(Base):
         nullable=False,
     )
 
-    attachments = relationship(
-        "EmailAttachment",
-        back_populates="email",
-        cascade="all, delete-orphan",
+    attachments = mapped_column(
+        JSON,
+        nullable=True,
     )
 
     compliance_result = relationship(

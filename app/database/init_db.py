@@ -4,7 +4,6 @@ from app.database.database import engine
 # Import all models so SQLAlchemy registers them.
 from app.models import (
     Email,
-    EmailAttachment,
     ComplianceResult,
 )
 

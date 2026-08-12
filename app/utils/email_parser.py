@@ -1,4 +1,4 @@
-import re
+import re, json
 from app.core.logger import logger
 
 class EmailParser:
@@ -18,7 +18,7 @@ class EmailParser:
 
     
 
-    def parse(self, row: str) -> dict:
+    def parse(self, row: str, attachments_text: str) -> dict:
 
         email_text = row['email_text']
         
@@ -45,8 +45,9 @@ class EmailParser:
                 "bcc": self._extract_field(email_text, "Bcc"),
                 "subject": self._extract_field(email_text, "Subject"),
             },
-            "body": self._extract_body(email_text),
+            "body": self._extract_body(email_text) + attachments_text,
             "raw_email": email_text,
+            "attachments": json.loads(row['attachments']),
             "ground_truths": {
                 "category": row['category'],
                 "classification": row["classification"],

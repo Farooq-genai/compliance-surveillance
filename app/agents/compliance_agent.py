@@ -12,6 +12,8 @@ class ComplianceAgent:
     def analyze(self, email: dict) -> dict:
         prompt = self._build_prompt(email)
         response = self.azure_client.chat(prompt)
+        print(f"prompt :: {prompt}")
+        print(f"response :: {response}")
         return self._parse_response(response)
 
     def _build_prompt(self, email: dict) -> str:
@@ -288,6 +290,7 @@ Return ONLY the JSON object.
             response = re.sub(r"^```json\s*", "", response.strip(), flags=re.IGNORECASE)
             response = re.sub(r"\s*```$", "", response.strip())
             resp = json.loads(response)
+            print(f"resp :: {resp}")
             return resp
         except json.JSONDecodeError:
             return {

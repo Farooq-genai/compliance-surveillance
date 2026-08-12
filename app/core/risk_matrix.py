@@ -1,4 +1,4 @@
-RISK_MATRIX = {
+DEFAULT_RISK_MATRIX = {
     "Market Manipulation": 10,
     "Market Bribery": 8,
     "Employee Ethics": 6,

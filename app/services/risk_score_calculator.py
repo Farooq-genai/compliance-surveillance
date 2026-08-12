@@ -1,4 +1,5 @@
-from app.core.risk_matrix import RISK_MATRIX, CONFIDENCE_MULTIPLIERS, EVIDENCE_MULTIPLIERS, EXTERNAL_PARTY_MULTIPLIER, NO_EXTERNAL_PARTY_MULTIPLIER
+from app.core.risk_matrix import CONFIDENCE_MULTIPLIERS, EVIDENCE_MULTIPLIERS, EXTERNAL_PARTY_MULTIPLIER, NO_EXTERNAL_PARTY_MULTIPLIER
+from app.services.risk_matrix_service import RiskMatrixService
 
 
 class RiskScoreCalculator:

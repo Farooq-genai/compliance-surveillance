@@ -3,6 +3,7 @@ from app.core.config import settings
 from app.core.logger import logger
 from app.api.v1.upload import router as upload_router
 from app.api.v1.compliance import router as compliance_router
+from app.api.v1.risk_matrix import router as risk_matrix_router
 from fastapi.responses import HTMLResponse
 from pathlib import Path
 
@@ -45,6 +46,12 @@ def dashboard():
     return file.read_text(
         encoding="utf-8"
     )
+
+
+app.include_router(
+    risk_matrix_router,
+    prefix="/api"
+)
 
 app.include_router(upload_router)
 app.include_router(compliance_router, prefix="/api/v1")

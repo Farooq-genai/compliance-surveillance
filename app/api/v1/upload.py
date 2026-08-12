@@ -16,7 +16,7 @@ UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
 @router.post(
     "/emails",
-    summary="Upload EMails in excel file."
+    summary="Upload Emails in excel file."
 )
 async def upload_email_excel(
     file: UploadFile = File(...)
@@ -37,11 +37,11 @@ async def upload_email_excel(
         with file_path.open("wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
         compliance_service = ComplianceService()
-        logger.info(f"got some info {buffer}")
+        logger.info(f"got some info in buffer {buffer}")
         result = compliance_service.process_excel(
             excel_path=file_path
         )
-        logger.info(f"Compliance :: {result}")
+        # logger.info(f"Compliance :: {result}")
         return {
             "status": "success",
             "file_name": file.filename,
