@@ -9,7 +9,7 @@ DEFAULT_RISK_MATRIX = {
 
 CONFIDENCE_MULTIPLIERS = {
     "HIGH": 1.0,
-    "MEDIUM_HIGH": 0.9,
+    "CRITICAL": 0.9,
     "MEDIUM": 0.7,
     "LOW": 0.5,
 }

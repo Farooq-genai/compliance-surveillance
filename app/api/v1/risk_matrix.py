@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
-
+from typing import Dict
 from app.services.risk_matrix_service import RiskMatrixService
 
 
@@ -13,8 +13,8 @@ router = APIRouter(
 service = RiskMatrixService()
 
 
-class RiskUpdate(BaseModel):
-    score: int
+class RiskMatrixUpdate(BaseModel):
+    risk_matrix: Dict[str, int]
 
 
 @router.get("/")
@@ -24,20 +24,18 @@ def get_risk_matrix():
 
 
 
-@router.put("/{category}")
+@router.put("/")
 def update_risk_matrix(
-    category: str,
-    request: RiskUpdate
+    request: RiskMatrixUpdate
 ):
 
     try:
 
-        return service.update_score(
-            category,
-            request.score
+        return service.update_matrix(
+            request.risk_matrix
         )
 
-    except Exception as exc:
+    except ValueError as exc:
 
         raise HTTPException(
             status_code=400,

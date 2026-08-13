@@ -94,6 +94,8 @@ Enterprise Compliance Surveillance
 
 <th>Category</th>
 
+<th>Evidence</th>
+
 <th>Risk Score</th>
 
 <th>Priority</th>
@@ -152,7 +154,11 @@ async function loadResults(){
 
 
         <td>
-            ${item.categories.join(",")}
+            ${item.categories.join("<br>")}
+        </td>
+
+        <td>
+            ${item.evidence.join("<br>")}
         </td>
 
 

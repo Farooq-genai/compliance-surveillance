@@ -464,3 +464,61 @@
 2026-08-12 12:12:52,431 | INFO | Compliance-Surveillance | Compliance Surveillance application started
 2026-08-12 12:13:01,579 | INFO | Compliance-Surveillance | AzureOpenAIClient called
 2026-08-12 12:13:02,394 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-13 05:40:17,599 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-13 05:40:19,156 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-13 05:41:56,779 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-13 05:42:17,146 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-13 05:42:17,878 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-13 05:48:32,695 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-13 05:48:33,631 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-13 05:51:36,163 | INFO | Compliance-Surveillance | got some info in buffer <_io.BufferedWriter name='Uploads\\test_attachments (2).xlsx'>
+2026-08-13 05:51:36,211 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-13 05:51:39,372 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-13 05:51:39,401 | INFO | Compliance-Surveillance | Process_Excel :: name 'RISK_MATRIX' is not defined
+2026-08-13 05:56:04,275 | INFO | Compliance-Surveillance | got some info in buffer <_io.BufferedWriter name='Uploads\\test_attachments (2).xlsx'>
+2026-08-13 05:56:15,864 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-13 05:56:18,120 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-13 05:56:18,122 | INFO | Compliance-Surveillance | Process_Excel :: name 'RISK_MATRIX' is not defined
+2026-08-13 05:56:20,825 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-13 05:56:21,448 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-13 05:56:32,375 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-13 05:56:33,061 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-13 05:56:43,549 | INFO | Compliance-Surveillance | got some info in buffer <_io.BufferedWriter name='Uploads\\test_attachments (2).xlsx'>
+2026-08-13 05:56:43,589 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-13 05:56:46,525 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-13 05:56:46,740 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-13 05:56:48,365 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-13 06:41:13,216 | INFO | Compliance-Surveillance | got some info in buffer <_io.BufferedWriter name='Uploads\\test_attachments (2).xlsx'>
+2026-08-13 06:41:13,252 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-13 06:41:15,918 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-13 06:41:15,965 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-13 06:41:17,540 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-13 06:41:17,543 | INFO | Compliance-Surveillance | Process_Excel :: 'CRITICAL'
+2026-08-13 07:27:23,552 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-13 07:27:24,366 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-13 07:29:28,046 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-13 07:29:28,809 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-13 07:29:45,688 | INFO | Compliance-Surveillance | got some info in buffer <_io.BufferedWriter name='Uploads\\test_attachments (2).xlsx'>
+2026-08-13 07:29:45,741 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-13 07:29:50,097 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-13 07:29:50,164 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-13 07:29:52,213 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-13 07:30:08,652 | INFO | Compliance-Surveillance | got some info in buffer <_io.BufferedWriter name='Uploads\\test_attachments (2).xlsx'>
+2026-08-13 07:30:08,685 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-13 07:30:11,179 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-13 07:30:11,230 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-13 07:30:12,911 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-13 07:30:37,594 | INFO | Compliance-Surveillance | got some info in buffer <_io.BufferedWriter name='Uploads\\test_attachments (2).xlsx'>
+2026-08-13 07:30:37,638 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-13 07:30:40,131 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-13 07:30:40,180 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-13 07:30:41,909 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-13 07:32:32,117 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-13 07:32:32,781 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-13 08:51:43,270 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-13 08:51:44,564 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-13 08:52:21,709 | INFO | Compliance-Surveillance | got some info in buffer <_io.BufferedWriter name='Uploads\\test_attachments (2).xlsx'>
+2026-08-13 08:52:21,777 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-13 08:52:25,069 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-13 08:52:25,143 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-13 08:52:26,801 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"

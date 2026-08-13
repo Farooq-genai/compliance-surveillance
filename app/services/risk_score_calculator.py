@@ -1,59 +1,65 @@
-from app.core.risk_matrix import CONFIDENCE_MULTIPLIERS, EVIDENCE_MULTIPLIERS, EXTERNAL_PARTY_MULTIPLIER, NO_EXTERNAL_PARTY_MULTIPLIER
+from app.core.risk_matrix import CONFIDENCE_MULTIPLIERS, EVIDENCE_MULTIPLIERS, EXTERNAL_PARTY_MULTIPLIER, NO_EXTERNAL_PARTY_MULTIPLIER, DEFAULT_RISK_MATRIX
 from app.services.risk_matrix_service import RiskMatrixService
 
 
 class RiskScoreCalculator:
     def calculate(self, ai_result: dict):
-        categories = ai_result.get("Categories", [])
-        confidence = ai_result.get('Confidence', 0)
-        evidance_strenghts = ai_result.get("Evidence_Strength", [])
-        outside_party = ai_result.get("Outside_Party_Involved", False)
+        try:
+            print(f"risk calculator called with data : {ai_result}")
+            categories = ai_result.get("Categories", [])
+            confidence = ai_result.get('Confidence', 0)
+            evidance_strenghts = ai_result.get("Evidence_Strength", [])
+            outside_party = ai_result.get("Outside_Party_Involved", False)
 
-        category_risk_details = []
+            category_risk_details = []
 
-        for index, category in enumerate(categories):
-            base_weight = RISK_MATRIX.get(category)
-            if base_weight is None:
-                continue
+            for index, category in enumerate(categories):
+                base_weight = DEFAULT_RISK_MATRIX.get(category)
+                if base_weight is None:
+                    continue
 
-            evidence_strength = self._get_evidence_strength(evidance_strenghts, index)
-            confidence_multiplier = self._get_confidence_score(confidence)
-            evidance_multiplier = self._get_evidence_multiplier(evidence_strength)
+                evidence_strength = self._get_evidence_strength(evidance_strenghts, index)
+                confidence_multiplier = self._get_confidence_score(confidence)
+                evidance_multiplier = self._get_evidence_multiplier(evidence_strength)
 
-            external_party_multiplier = EXTERNAL_PARTY_MULTIPLIER if outside_party else NO_EXTERNAL_PARTY_MULTIPLIER
+                external_party_multiplier = EXTERNAL_PARTY_MULTIPLIER if outside_party else NO_EXTERNAL_PARTY_MULTIPLIER
 
-            risk_score = (base_weight * confidence_multiplier * evidance_multiplier * external_party_multiplier)
+                risk_score = (base_weight * confidence_multiplier * evidance_multiplier * external_party_multiplier)
 
-            priority = self._get_priority(risk_score)
+                priority = self._get_priority(risk_score)
 
-            category_risk_details.append(
-                {
-                    "category": category,
-                    "base_weight": base_weight,
-                    "Confidence": confidence,
-                    "Confidence_multiplier": confidence_multiplier,
-                    "Evidence_Strength": evidence_strength,
-                    "Evidence_Multiplier": evidance_multiplier,
-                    "External_Party_Multiplier": external_party_multiplier,
-                    "Risk_Score": risk_score,
-                    "Priority": priority
-                }
-            )
+                category_risk_details.append(
+                    {
+                        "category": category,
+                        "base_weight": base_weight,
+                        "Confidence": confidence,
+                        "Confidence_multiplier": confidence_multiplier,
+                        "Evidence_Strength": evidence_strength,
+                        "Evidence_Multiplier": evidance_multiplier,
+                        "External_Party_Multiplier": external_party_multiplier,
+                        "Risk_Score": risk_score,
+                        "Priority": priority
+                    }
+                )
 
-        overall_score = self._get_overall_score(category_risk_details)
-        overall_priority = self._get_priority(overall_score)
-        
-        return {
-        "Risk_Score": overall_score,
-        "Priority": overall_priority,
-        "Review_Required": overall_score >= 5,
-        "Review_Status": (
-            "Pending Compliance Review"
-            if overall_score >= 5
-            else "No Review Required"
-        ),
-        "Category_Risk_Details": category_risk_details,
-    }
+            overall_score = self._get_overall_score(category_risk_details)
+            overall_priority = self._get_priority(overall_score)
+            
+            return {
+                "Risk_Score": overall_score,
+                "Priority": overall_priority,
+                "Review_Required": overall_score >= 5,
+                "Review_Status": (
+                    "Pending Compliance Review"
+                    if overall_score >= 5
+                    else "No Review Required"
+                ),
+                "Category_Risk_Details": category_risk_details,
+            }
+        except Exception as exp:
+            print(f"gor error on Calculator : {exp}")
+            return {}
+    
 
 
     @staticmethod
@@ -138,6 +144,3 @@ class RiskScoreCalculator:
 
         return "Low"
 
-
-
-        

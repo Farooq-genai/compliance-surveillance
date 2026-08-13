@@ -40,26 +40,32 @@ class RiskMatrixService:
 
             return json.load(file)
 
+    def update_matrix(self, matrix: dict):
 
-    def update_score(
-        self,
-        category,
-        score
-    ):
+        current_matrix = self.get_matrix()
 
-        matrix = self.get_matrix()
-
-
-        if category not in matrix:
-
-            raise Exception(
-                f"Unknown category: {category}"
+        # Validate categories
+        if set(matrix.keys()) != set(
+            current_matrix.keys()
+        ):
+            raise ValueError(
+                "Invalid risk matrix categories"
             )
 
+        # Validate scores
+        for category, score in matrix.items():
 
-        matrix[category] = score
+            if not isinstance(score, int):
+                raise ValueError(
+                    f"Score for '{category}' must be an integer"
+                )
 
+            if score < 0:
+                raise ValueError(
+                    f"Score for '{category}' cannot be negative"
+                )
 
+        # Save complete matrix
         with open(
             self.file_path,
             "w"
@@ -71,5 +77,22 @@ class RiskMatrixService:
                 indent=4
             )
 
-
         return matrix
+
+
+    def update_score(
+        self,
+        category: str,
+        score: int
+    ):
+
+        matrix = self.get_matrix()
+
+        if category not in matrix:
+            raise ValueError(
+                f"Unknown category: {category}"
+            )
+
+        matrix[category] = score
+
+        return self.update_matrix(matrix)
