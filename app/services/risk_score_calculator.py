@@ -24,7 +24,7 @@ class RiskScoreCalculator:
 
                 external_party_multiplier = EXTERNAL_PARTY_MULTIPLIER if outside_party else NO_EXTERNAL_PARTY_MULTIPLIER
 
-                risk_score = (base_weight * confidence_multiplier * evidance_multiplier * external_party_multiplier)
+                risk_score = round(base_weight * confidence_multiplier * evidance_multiplier * external_party_multiplier)
 
                 priority = self._get_priority(risk_score)
 
