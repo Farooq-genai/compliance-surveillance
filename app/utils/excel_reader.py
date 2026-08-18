@@ -57,7 +57,7 @@ class ExcelReader:
                 {
                     "sample_id": record.get("Sample#"),
                     "email_text": record.get("Email Sample"),
-                    "category": record.get("Ca   tegory"),
+                    "category": record.get("Category"),
                     "classification": record.get("Classification"),
                     "attachments": record.get("Attachments")
                 }

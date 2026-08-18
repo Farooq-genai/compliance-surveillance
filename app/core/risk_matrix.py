@@ -1,10 +1,10 @@
 DEFAULT_RISK_MATRIX = {
-    "Market Manipulation": 10,
-    "Market Bribery": 8,
-    "Employee Ethics": 6,
-    "Complaints": 5,
-    "Communication Change": 4,
-    "Secrecy": 3,
+    "Market Manipulation": 8,
+    "Market Bribery": 9,
+    "Employee Ethics": 3,
+    "Complaints": 2,
+    "Communication Change": 10,
+    "Secrecy": 9
 }
 
 CONFIDENCE_MULTIPLIERS = {

@@ -92,9 +92,13 @@ Enterprise Compliance Surveillance
 
 <th>Sender</th>
 
+<th>Outside Party Involved</th>
+
 <th>Category</th>
 
 <th>Evidence</th>
+
+<th>Content</th>
 
 <th>Risk Score</th>
 
@@ -150,8 +154,13 @@ async function loadResults(){
         <td>${item.id}</td>
 
 
-        <td>${item.sender}</td>
+        <td>
+            ${item.sender}
+        </td>
 
+        <td>
+            ${item.outside_party_involved}
+        </td>
 
         <td>
             ${item.categories.join("<br>")}
@@ -160,7 +169,10 @@ async function loadResults(){
         <td>
             ${item.evidence.join("<br>")}
         </td>
-
+        
+        <td>
+            ${item.body}
+        </td>
 
         <td>
             ${item.risk_score}

@@ -1,5 +1,7 @@
 from app.core.risk_matrix import CONFIDENCE_MULTIPLIERS, EVIDENCE_MULTIPLIERS, EXTERNAL_PARTY_MULTIPLIER, NO_EXTERNAL_PARTY_MULTIPLIER, DEFAULT_RISK_MATRIX
 from app.services.risk_matrix_service import RiskMatrixService
+# import json
+
 
 
 class RiskScoreCalculator:
@@ -12,6 +14,9 @@ class RiskScoreCalculator:
             outside_party = ai_result.get("Outside_Party_Involved", False)
 
             category_risk_details = []
+
+            # with open("app\storage\risk_matrix.json", "r") as f:
+            #     dynamic = json.load(f)
 
             for index, category in enumerate(categories):
                 base_weight = DEFAULT_RISK_MATRIX.get(category)
