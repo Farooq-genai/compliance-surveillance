@@ -66,11 +66,12 @@ class ComplianceService:
                 saved_email = self.email_repository.create(db, email)
                 # logger.info(f"Complienace Service : saved_email _id {saved_email.id}")
                 analysis = self.compliance_agent.analyze(email)
-                
+                print(f"analysis :: {analysis}")
                 risk_result = self.risk_score_calculator.calculate(analysis)
                 final_analysis = {
                     **analysis, **risk_result,
                 }
+                print(f"final_analysis :: {final_analysis}")
                 saved_results = self.compliance_repository.create(db, saved_email.id, final_analysis)
                 print(f"Saved Compliance id: {saved_results.id}")
                 row_data = {
@@ -80,7 +81,7 @@ class ComplianceService:
                         "email": email,
                         "analysis": final_analysis,
                     }
-                print(f"row_data :: {row_data}")
+                # print(f"row_data :: {row_data}")
                 results.append(
                     row_data
                 )

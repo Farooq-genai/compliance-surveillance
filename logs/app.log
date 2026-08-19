@@ -459,3 +459,229 @@
 2026-08-17 11:58:51,710 | INFO | Compliance-Surveillance | Compliance Surveillance application started
 2026-08-17 12:01:10,127 | INFO | Compliance-Surveillance | AzureOpenAIClient called
 2026-08-17 12:01:11,503 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-18 05:38:16,409 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-18 05:38:18,400 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-18 05:43:00,012 | INFO | Compliance-Surveillance | got some info in buffer <_io.BufferedWriter name='Uploads\\compliance_surveillance_test_data (1).xlsx'>
+2026-08-18 05:43:00,159 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:03,465 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:03,513 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:05,358 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:05,404 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:07,107 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:07,145 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:09,103 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:09,141 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:11,012 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:11,049 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:13,012 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:13,070 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:14,859 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:14,899 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:16,725 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:16,760 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:18,372 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:18,415 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:20,183 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:20,217 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:22,060 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:22,098 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:23,789 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:23,824 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:25,488 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:25,524 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:27,219 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:27,293 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:29,286 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:29,320 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:31,163 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:31,200 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:33,092 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:33,188 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:35,106 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:35,415 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:37,203 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:37,244 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:38,858 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:38,896 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:40,696 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:40,730 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:42,597 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:42,631 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:44,497 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:44,534 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:46,592 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:43:46,627 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 05:43:48,694 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 05:51:54,637 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-18 05:51:55,367 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-18 06:01:33,114 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-18 06:01:33,907 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-18 06:02:18,345 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-18 06:02:19,053 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-18 06:03:26,064 | INFO | Compliance-Surveillance | got some info in buffer <_io.BufferedWriter name='Uploads\\compliance_surveillance_test_data (1).xlsx'>
+2026-08-18 06:03:26,133 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:28,808 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:28,881 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:30,665 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:30,747 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:32,638 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:32,682 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:34,430 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:34,471 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:36,337 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:36,376 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:38,132 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:38,171 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:39,990 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:40,030 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:42,045 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:42,092 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:43,713 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:43,747 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:45,548 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:45,600 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:47,439 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:47,478 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:49,122 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:49,158 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:50,892 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:50,925 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:52,558 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:52,611 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:54,557 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:54,594 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:56,397 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:56,434 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:58,054 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:58,135 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:03:59,813 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:03:59,849 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:04:01,704 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:04:01,739 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:04:03,401 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:04:03,476 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:04:05,181 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:04:05,223 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:04:07,036 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:04:07,081 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:04:09,043 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:04:09,101 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:04:11,106 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:04:11,149 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:04:12,857 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:08:48,261 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-18 06:08:49,371 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-18 06:09:34,205 | INFO | Compliance-Surveillance | got some info in buffer <_io.BufferedWriter name='Uploads\\compliance_surveillance_test_data (1).xlsx'>
+2026-08-18 06:09:34,270 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:09:37,249 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:09:37,317 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:09:39,202 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:09:39,237 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:09:40,954 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:09:40,990 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:09:42,914 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:09:42,952 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:09:44,922 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:09:44,954 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:09:47,500 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:09:47,538 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:09:49,350 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:09:49,424 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:09:51,233 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:09:51,277 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:09:53,078 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:09:53,128 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:09:55,012 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:09:55,084 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:09:57,076 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:09:57,115 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:09:58,841 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:09:58,878 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:10:00,448 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:10:00,515 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:10:02,140 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:10:02,177 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:10:04,199 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:10:04,235 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:10:06,132 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:10:06,193 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:10:08,054 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:10:08,100 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:10:09,708 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:10:09,748 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:10:11,538 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:10:11,575 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:10:13,339 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:10:13,381 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:10:15,226 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:10:15,268 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:10:17,097 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:10:17,133 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:10:18,838 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:10:18,890 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:10:20,533 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-18 06:10:20,569 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-18 06:10:20,683 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2026-08-18 06:10:20,684 | INFO | openai._base_client | Retrying request to /chat/completions in 1.205000 seconds
+2026-08-18 06:10:23,508 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 06:36:39,668 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-19 06:36:40,758 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-19 07:32:26,794 | INFO | Compliance-Surveillance | AzureOpenAIClient called
+2026-08-19 07:32:28,116 | INFO | Compliance-Surveillance | Compliance Surveillance application started
+2026-08-19 07:33:41,993 | INFO | Compliance-Surveillance | got some info in buffer <_io.BufferedWriter name='Uploads\\compliance_surveillance_test_data (1).xlsx'>
+2026-08-19 07:33:42,085 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:33:45,792 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:33:45,901 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:33:47,851 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:33:47,889 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:33:49,430 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:33:49,463 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:33:51,573 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:33:51,636 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:33:53,579 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:33:53,608 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:33:55,503 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:33:55,534 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:33:57,182 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:33:57,248 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:33:59,172 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:33:59,202 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:00,883 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:00,909 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:02,641 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:02,748 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:04,603 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:04,631 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:06,469 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:06,501 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:09,007 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:09,039 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:10,561 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:10,591 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:12,764 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:12,799 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:15,014 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:15,049 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:17,382 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:17,415 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:19,185 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:19,214 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:21,439 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:21,473 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:23,756 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:23,790 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:25,538 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:25,574 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:27,500 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:27,531 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:27,621 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2026-08-19 07:34:27,622 | INFO | openai._base_client | Retrying request to /chat/completions in 2.499000 seconds
+2026-08-19 07:34:32,259 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:32,291 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:32,378 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2026-08-19 07:34:32,379 | INFO | openai._base_client | Retrying request to /chat/completions in 2.569000 seconds
+2026-08-19 07:34:36,414 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"
+2026-08-19 07:34:36,558 | INFO | Compliance-Surveillance | Sending prompt to Azure OpenAI
+2026-08-19 07:34:36,749 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 429 Too Many Requests"
+2026-08-19 07:34:36,762 | INFO | openai._base_client | Retrying request to /chat/completions in 3.074000 seconds
+2026-08-19 07:34:41,839 | INFO | httpx | HTTP Request: POST https://dev-openai-service-02.openai.azure.com/openai/deployments/julbatch1-295ce786-a86b-4d17-a683-7ffc54dacf09/chat/completions?api-version=2025-01-01-preview "HTTP/1.1 200 OK"

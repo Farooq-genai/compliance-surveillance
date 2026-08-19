@@ -13,6 +13,7 @@ class ComplianceAgent:
         prompt = self._build_prompt(email)
         # print(f"Prompt :: {prompt}")
         response = self.azure_client.chat(prompt)
+        # print(f"response :: {response}")
         return self._parse_response(response)
 
     def _build_prompt(self, email: dict) -> str:
@@ -51,10 +52,11 @@ MANDATORY OUTPUT RULES
 9. Evidence MUST be copied exactly from the email.
 10. Confidence must be an integer from 0 to 100.
 11. Categories, Evidence, and Evidence_Strength must contain matching elements.
-12. If Is_Non_Compliance is false, Categories, Evidence, and Evidence_Strength MUST all be [].
+12. If Is_Non_Compliance is false, Categories MUST be ["None"], Evidence MUST contain exactly one item explaining why no category applied, and Evidence_Strength MUST be ["Not Applicable"]. Categories, Evidence, and Evidence_Strength must NEVER be empty arrays for any classification, true or false.
 13. If a surveillance signal clearly matches a defined category, classify it even when misconduct cannot be conclusively proven.
 14. External-party involvement alone is NOT a compliance concern.
 15. Normal business activity should not be flagged unless it contains a defined surveillance signal.
+16. Summary and Reason_For_Flagging are MANDATORY for every email, including True Negatives (Is_Non_Compliance = false). They must never be empty strings.
 
 ================================
 PRIMARY CLASSIFICATION PRINCIPLE
@@ -73,7 +75,7 @@ Do NOT simply count keywords.
 
 However, when a defined category explicitly includes a particular behavioral signal, the presence of that signal is sufficient for classification unless the surrounding context clearly negates it.
 
-==================================================
+========================
 SIX PERMITTED CATEGORIES
 ========================
 
@@ -87,6 +89,8 @@ Only the following categories are allowed:
 6. Communication Change
 
 Never create another category.
+
+A seventh value, "None", is reserved exclusively for True Negatives (Is_Non_Compliance = false). It is not a surveillance category and must never be combined with any of the six categories above, and must never appear when Is_Non_Compliance is true.
 
 ==================================================
 1. MARKET MANIPULATION
@@ -532,6 +536,10 @@ NOT:
 
 "The sender wants to hide the discussion."
 
+EXCEPTION FOR TRUE NEGATIVES:
+
+When Categories = ["None"], there is no violation phrase to copy. In this single case only, Evidence MUST contain exactly one short system-generated sentence (not copied from the email) stating that no surveillance-relevant language was found. This is the only situation where Evidence is not a verbatim quote from the email.
+
 =================
 EVIDENCE STRENGTH
 =================
@@ -549,6 +557,8 @@ Use "Direct Statement" when the email explicitly contains the relevant behavior 
 Use "Strong Contextual Evidence" when the email strongly indicates the behavior through multiple contextual elements but does not directly state it.
 
 Use "Weak Contextual Evidence" only when the evidence is limited or ambiguous.
+
+Use "Not Applicable" ONLY when Categories = ["None"] (True Negative). Never use "Not Applicable" for any of the six surveillance categories.
 
 Do NOT invent evidence strength.
 
@@ -577,7 +587,7 @@ IS_NON_COMPLIANCE
 
 Set Is_Non_Compliance to TRUE when at least one defined surveillance category is supported.
 
-Set Is_Non_Compliance to FALSE when no defined surveillance category is supported.
+Set Is_Non_Compliance to FALSE when no defined surveillance category is supported. In this case, Categories = ["None"], Evidence = [one system-generated sentence explaining why nothing matched], Evidence_Strength = ["Not Applicable"].
 
 IMPORTANT:
 
@@ -636,6 +646,10 @@ Summarize why the email was or was not classified.
 
 Do not merely summarize the subject.
 
+This field is MANDATORY for every email, including True Negatives. It must never be an empty string.
+
+For True Negatives, Summary must state that no surveillance category was matched (e.g., "The email is a routine business communication with no compliance-relevant signal.").
+
 ===================
 REASON_FOR_FLAGGING
 ===================
@@ -644,7 +658,9 @@ Explain the specific surveillance signal that caused the classification.
 
 For FALSE:
 
-Explain why no defined surveillance category was identified.
+This field is MANDATORY and must never be an empty string, even though Categories/Evidence/Evidence_Strength are [].
+
+Explain why no defined surveillance category was identified. Briefly state what was considered and why none of the six categories applied (e.g., no secrecy signal, no channel change, no bribery/manipulation indicators, no complaint, no ethics violation).
 
 For TRUE:
 
@@ -662,12 +678,28 @@ Return exactly this JSON structure:
 "Outside_Party_Involved": false,
 "Sender": "",
 "Is_Non_Compliance": false,
-"Categories": [],
-"Evidence": [],
-"Evidence_Strength": [],
+"Categories": ["None"],
+"Evidence": ["No surveillance-relevant language was identified in the email."],
+"Evidence_Strength": ["Not Applicable"],
 "Summary": "",
 "Reason_For_Flagging": "",
 "Confidence": 0
+}}
+
+Note: Categories, Evidence, and Evidence_Strength must never be empty arrays, even for a True Negative — use ["None"], a one-sentence explanation, and ["Not Applicable"] respectively. Summary and Reason_For_Flagging must also always be filled in — never left as empty strings.
+
+Example of a valid True Negative output:
+
+{{
+"Outside_Party_Involved": false,
+"Sender": "",
+"Is_Non_Compliance": false,
+"Categories": ["None"],
+"Evidence": ["No secrecy, bribery, manipulation, ethics, complaint, or communication-channel language was found in the email."],
+"Evidence_Strength": ["Not Applicable"],
+"Summary": "The email is a routine business communication with no compliance-relevant signal.",
+"Reason_For_Flagging": "No secrecy, bribery, manipulation, ethics, complaint, or communication-channel signal was present in the email content.",
+"Confidence": 88
 }}
 
 If multiple categories exist:
@@ -736,10 +768,12 @@ Before returning the JSON, silently verify:
 11. Does every returned category have exact supporting evidence?
 12. Is every evidence item copied exactly from the email?
 13. Are Categories, Evidence, and Evidence_Strength aligned?
-14. If no category is supported, is Is_Non_Compliance false?
+14. If no category is supported, is Is_Non_Compliance false, with Categories = [suitable category from above six], Evidence = [brief evidance], and Evidence_Strength = [how critical it is]?
 15. Is Confidence between 0 and 100?
-16. Is the response valid JSON?
-17. Is there absolutely no text outside the JSON?
+16. Are Summary and Reason_For_Flagging both non-empty, even for a True Negative?
+17. Are Categories, Evidence, and Evidence_Strength all non-empty arrays for every classification?
+18. Is the response valid JSON?
+19. Is there absolutely no text outside the JSON?
 
 Return ONLY the JSON object.
 
